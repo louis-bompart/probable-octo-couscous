@@ -25,6 +25,11 @@ export const config: Config = {
           dest: "headless",
           keepDirStructure: false,
         },
+        {
+          src: "../dist_tests",
+          dest: "test",
+          keepDirStructure: false,
+        },
       ],
     },
     {

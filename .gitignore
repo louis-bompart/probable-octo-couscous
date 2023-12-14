@@ -8,4 +8,5 @@ npm-debug.log*
 .env
 # Build
 dist
+dist_tests
 www

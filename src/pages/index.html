@@ -10,6 +10,8 @@
     <title>My-App</title>
     <link href="/atomic/themes/coveo.css" rel="stylesheet" />
     <link href="/build/my-app.css" rel="stylesheet" />
+    <!-- We want this first to ensure Mirage replace the global/native fetch function before anything manage to get a ref of it -->
+    <script type="module" scr="/test/mirage.js"></script>
     <!-- 
       When using the Coveo CDN - Make sure you're using the same minor version as the packaged Atomic.
       E.g., if you have "@coveo/atomic@2.0.0" installed, use the "/atomic/v2.0.0/" path.
